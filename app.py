@@ -11,19 +11,19 @@ db = SQLAlchemy(app)
 
 
 def users_data():
-    with open('users.json', 'r') as file:
+    with open('data/users.json', 'r') as file:
         user = json.load(file)
         return user
 
 
 def offer_data():
-    with open('offers.json', 'r') as file:
+    with open('data/offers.json', 'r') as file:
         offer = json.load(file)
         return offer
 
 
 def orders_data():
-    with open('orders.json', 'r', encoding='utf8') as file:
+    with open('data/orders.json', 'r', encoding='utf8') as file:
         order = json.load(file)
         return order
 
